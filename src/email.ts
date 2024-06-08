@@ -2,6 +2,8 @@ import { Bindings } from "./bindings";
 
 export async function send(
 	env: Bindings,
+	from: string,
+	from_name: string,
 	to: string,
 	to_name: string,
 	title: string,
