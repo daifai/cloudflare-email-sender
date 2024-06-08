@@ -22,7 +22,7 @@ export async function send(
 					dkim_private_key: `${env.DKIM_PRIVATE_KEY}`
 				},
 			],
-			from: { email: `${env.SENDER_EMAIL}`, name: `${env.SENDER_NAME}` },
+			from: { email: `${from}`, name: `${from_name}` },
 			subject: `${title}`,
 			content: [
 				{
