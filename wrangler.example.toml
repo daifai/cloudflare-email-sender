@@ -1,5 +1,5 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "email-sender"
+name = "mailchannels"
 main = "src/index.ts"
 compatibility_date = "2024-04-05"
 
@@ -7,7 +7,7 @@ dev.host = "127.0.0.1"
 dev.port = 8787
 
 [vars]
-SENDER_EMAIL = "do-not-replay@example.com" # Domain email hosted by Cloudflare
-SENDER_NAME = "Do Not Reply" # Or the name you want to set
+#SENDER_EMAIL = "do-not-replay@example.com" # Domain email hosted by Cloudflare
+#SENDER_NAME = "Do Not Reply" # Or the name you want to set
 DKIM_DOMAIN = "example.com" # Set you domain
 DKIM_SELECTOR = "mailchannels" # Or set you custom name
